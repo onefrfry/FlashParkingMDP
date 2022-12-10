@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View1Controller" customModule="Flash" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapCell" id="WQe-QB-6Yh" customClass="MapCell" customModule="Flash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="21" height="27"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lwK-L0-VUu">
+                <rect key="frame" x="0.0" y="0.0" width="21" height="27"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-ZO-dPI">
+                        <rect key="frame" x="0.0" y="0.0" width="21" height="27"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEA-tO-IY1">
+                                <rect key="frame" x="0.0" y="0.0" width="21" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hYO-ZO-dPI" secondAttribute="trailing" id="5l8-6A-4It"/>
+                    <constraint firstItem="hYO-ZO-dPI" firstAttribute="top" secondItem="lwK-L0-VUu" secondAttribute="top" id="CmU-6p-l3V"/>
+                    <constraint firstItem="hYO-ZO-dPI" firstAttribute="leading" secondItem="lwK-L0-VUu" secondAttribute="leading" id="OH8-gf-1MZ"/>
+                    <constraint firstAttribute="bottom" secondItem="hYO-ZO-dPI" secondAttribute="bottom" id="XrV-2j-RdG"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="175" height="156"/>
+            <connections>
+                <outlet property="floorLabelPiece" destination="jEA-tO-IY1" id="hqX-5t-aI5"/>
+            </connections>
+            <point key="canvasLocation" x="-34.057971014492757" y="181.47321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

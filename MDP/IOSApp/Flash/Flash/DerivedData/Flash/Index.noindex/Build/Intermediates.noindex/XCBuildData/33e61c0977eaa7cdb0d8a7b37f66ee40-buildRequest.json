@@ -1,0 +1,58 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "d75538a643127502a6119cc97d6eb02447bcb9af6071cbfceca56b962bae90c4"
+    }
+  ],
+  "containerPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/Flash.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.1",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/on3french3dfry/Desktop/flashparking_2022/IOSApp/Flash/Flash/DerivedData/Flash/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
