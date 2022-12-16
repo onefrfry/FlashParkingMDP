@@ -1,0 +1,63 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "d75538a643127502a6119cc97d6eb02447bcb9af6071cbfceca56b962bae90c4"
+    }
+  ],
+  "containerPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/DerivedData/Flash/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/DerivedData/Flash/Build/Products",
+      "derivedDataPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/DerivedData/Flash/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/DerivedData/Flash/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,3",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "16.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone14,3",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "1ECD2789-B17C-4019-B521-9461454E57A6",
+          "TARGET_DEVICE_MODEL" : "iPhone14,3",
+          "TARGET_DEVICE_OS_VERSION" : "16.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

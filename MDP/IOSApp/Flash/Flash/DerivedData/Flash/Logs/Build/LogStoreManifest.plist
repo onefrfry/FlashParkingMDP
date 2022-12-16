@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>871AAD9C-BDBC-4B48-962B-5A2A8FDE5A42</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>871AAD9C-BDBC-4B48-962B-5A2A8FDE5A42.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Flash project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Flash</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Flash</string>
+			<key>timeStartedRecording</key>
+			<real>692923655.97909606</real>
+			<key>timeStoppedRecording</key>
+			<real>692923669.75007498</real>
+			<key>title</key>
+			<string>Build Flash</string>
+			<key>uniqueIdentifier</key>
+			<string>871AAD9C-BDBC-4B48-962B-5A2A8FDE5A42</string>
+		</dict>
+		<key>947DC959-C0D9-4BF1-9D9A-B5026D8B8169</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>947DC959-C0D9-4BF1-9D9A-B5026D8B8169.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Flash project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Flash</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Flash</string>
+			<key>timeStartedRecording</key>
+			<real>692924045.90534103</real>
+			<key>timeStoppedRecording</key>
+			<real>692924048.46656597</real>
+			<key>title</key>
+			<string>Build Flash</string>
+			<key>uniqueIdentifier</key>
+			<string>947DC959-C0D9-4BF1-9D9A-B5026D8B8169</string>
+		</dict>
+		<key>9B826D93-9828-45A9-BE8A-1A84BA4DD4ED</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9B826D93-9828-45A9-BE8A-1A84BA4DD4ED.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Flash project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Flash</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Flash</string>
+			<key>timeStartedRecording</key>
+			<real>692857887.39540899</real>
+			<key>timeStoppedRecording</key>
+			<real>692857890.13896501</real>
+			<key>title</key>
+			<string>Build Flash</string>
+			<key>uniqueIdentifier</key>
+			<string>9B826D93-9828-45A9-BE8A-1A84BA4DD4ED</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

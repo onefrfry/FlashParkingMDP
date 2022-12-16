@@ -1,0 +1,23 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "f289335e6cb12efc414f158c98db1a89d2ff6877fed2ace2a5fb3d8f5fb3598d"
+build_start_time: [1671230858, 477748870]
+build_end_time: [1671230869, 743723869]
+inputs:
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/AppDelegate.swift": [1648502995, 632059097]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Constants.swift": [1671142838, 858749389]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/CustomModalViewController.swift": [1670639525, 241093635]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/DirectionViewController.swift": [1663083595, 799885272]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/ParkingCell.swift": [1663004185, 390744686]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/SideViewController.swift": [1663102870, 262932777]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/View0Controller.swift": [1669479404, 592930316]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/View1Controller.swift": [1671230855, 962041854]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/View2Controller.swift": [1671230474, 150349140]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Message.swift": [1648945506, 487472295]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/SceneDelegate.swift": [1648502995, 640430450]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/CustomActivityIndicator.swift": [1663004185, 343760728]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/CustomizationCollectionCell.swift": [1663004696, 958882808]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/FloorCell.swift": [1663004185, 372371196]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/ImageCollectionCell.swift": [1663008847, 23236751]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/InterfaceCollectionCell.swift": [1663008846, 999227046]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/MapCell.swift": [1671137949, 303635597]
+  "/Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/View/MapScrollCell.swift": [1669159383, 836710691]

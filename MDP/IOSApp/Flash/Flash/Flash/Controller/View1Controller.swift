@@ -504,19 +504,19 @@ extension View1Controller: UICollectionViewDelegate, UICollectionViewDataSource,
         
         switch(stringVal) {
             case "P":
-                picType = "Parking"
+                picType = "Parking Icon"
                 break
             
             case "E":
-                picType = "Elevator"
+                picType = "elevator"
                 break
             
             case "X":
-                picType = "Wall"
+                picType = "X"
                 break
             
             case "S":
-                picType = "User"
+                picType = "Current Nav Icon"
                 break
             
             case "C":
@@ -524,12 +524,12 @@ extension View1Controller: UICollectionViewDelegate, UICollectionViewDataSource,
                 break
             
             case ".":
-                picType = "blank"
+                picType = "Blank"
                 break
             
             default:
             // Unexpected Character, will assume a walking space
-                picType = "blank"
+                picType = "Blank"
                 break
         }
         
