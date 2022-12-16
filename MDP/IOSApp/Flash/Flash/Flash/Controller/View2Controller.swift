@@ -39,7 +39,7 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
     var floorTraverse: [[Coord]]?
     
     private var tempIndex: Int = 0
-    private var futureChar: CChar? = (".".cString(using: String.Encoding.utf8)?[0])!
+    private var futureChar: UIImage?
     private var startingFloor: Int = 0
     
     
@@ -122,36 +122,6 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
         
         
     }
-    
-//    func showViewController<T: UIViewController>(viewController: T.Type, storyboardId: String) -> () {
-//           // Remove the previous View
-//           for subview in view.subviews {
-//               if subview.tag == 99 {
-//                   subview.removeFromSuperview()
-//               }
-//           }
-//           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//           let vc = storyboard.instantiateViewController(withIdentifier: storyboardId) as! T
-//           vc.view.tag = 99
-//           view.insertSubview(vc.view, at: self.revealSideMenuOnTop ? 0 : 1)
-//           addChild(vc)
-//           vc.view.translatesAutoresizingMaskIntoConstraints = false
-//           NSLayoutConstraint.activate([
-//               vc.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-//               vc.view.topAnchor.constraint(equalTo: self.view.topAnchor),
-//               vc.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-//               vc.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
-//           ])
-//           if !self.revealSideMenuOnTop {
-//               if isExpanded {
-//                   vc.view.frame.origin.x = self.sideMenuWidth
-//               }
-//               if self.sideMenuShadowView != nil {
-//                   vc.view.addSubview(self.sideMenuShadowView)
-//               }
-//           }
-//           vc.didMove(toParent: self)
-//       }
     /*
      Animates the bottom view with the direction and arrow, along with the sidemenu when the settings button is clicked
      */
@@ -235,7 +205,7 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
     // Image that shows the directionalArrow
     lazy var arrowImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "straightArrow")
+        image.image = UIImage(named: "up")
         return image
     }()
     
@@ -371,6 +341,7 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
         // Rewrites itself when user presses back and comes back to this screen
         //Have some sort of database to remember where the user is, but for now, this demonstrates the idea
         updateLabel()
+        updateArrow()
         animatePresentContainer()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFire), userInfo: nil, repeats: true)
         
@@ -407,6 +378,7 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
         tempIndex -= 1
        if (tempIndex >= 0) {
            updateLabel()
+           updateArrow()
        } else {
             startingFloor += 1
             if (startingFloor >= floorTraverse!.count) {
@@ -417,6 +389,7 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
                 
                 self.delegate?.reloadAllMapCollectionViewCells(on: Int(self.userLocation!.z), with: self.collectionViewMap!)
                 updateLabel()
+                updateArrow()
                 updateMapWhileTraversing()
             }
         }
@@ -440,36 +413,34 @@ class View2Controller: UIViewController, UICollectionViewDelegate, UICollectionV
             }
         }
     }
+    func updateArrow() {
+        if let arrow = contentStackView.arrangedSubviews[0] as? UIImageView {
+            if (userLocation!.x < floorTraverse![startingFloor][tempIndex].x) {
+                arrow.image = UIImage(named: "right")
+            } else if (userLocation!.x > floorTraverse![startingFloor][tempIndex].x) {
+                arrow.image = UIImage(named: "left")
+            }
+            
+            if (userLocation!.y < floorTraverse![startingFloor][tempIndex].y) {
+                arrow.image = UIImage(named: "down")
+            } else if (userLocation!.y > floorTraverse![startingFloor][tempIndex].y) {
+                arrow.image = UIImage(named: "up")
+            }
+        }
+    }
     
     func updateMapWhileTraversing() {
         if let cellMap = self.collectionViewMap?.cellForItem(at: [0, Int((self.widthOfMap! * (floorTraverse![startingFloor][tempIndex].y)) + floorTraverse![startingFloor][tempIndex].x)]) as? MapCell,
             let userCell = self.collectionViewMap?.cellForItem(at: [0, Int((self.widthOfMap! * (self.userLocation!.y)) + self.userLocation!.x)]) as? MapCell {
             
-                userCell.floorLabelPiece.text = String(UnicodeScalar(UInt8(futureChar!)))
-                 futureChar = (cellMap.floorLabelPiece.text!.cString(using: String.Encoding.utf8)?[0])!
-                 cellMap.floorLabelPiece.text = String(UnicodeScalar(UInt8(Constants.cCharS)))
+            userCell.floorLabelPiece.image = futureChar
+            futureChar = cellMap.floorLabelPiece.image
+            
+            delegate?.imageTranslation(on: cellMap, String(UnicodeScalar(UInt8(Constants.cCharS))))
          }
     }
 }
 
-
-/*
-extension View2Controller: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Int(heightOfMap! * widthOfMap!);
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.mapCell, for: indexPath) as! MapCell
-        
-        cell.floorLabelPiece.adjustsFontSizeToFitWidth = true
-        
-        return cell
-    }
-    
-    
-}
- */
 /*
  Delegate methods for the gesture recognizer
  These are called when the sidemenu gets built and allows it to respond to the settings button press

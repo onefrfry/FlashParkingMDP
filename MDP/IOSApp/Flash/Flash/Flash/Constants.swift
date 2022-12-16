@@ -21,6 +21,7 @@ protocol SetupDelegate {
 
 protocol NavigateDelegate {
     func reloadAllMapCollectionViewCells(on: Int, with: UICollectionView)
+    func imageTranslation(on openedCell: MapCell, _ stringVal: String)
 }
  
 /*

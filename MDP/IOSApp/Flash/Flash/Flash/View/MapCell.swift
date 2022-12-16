@@ -9,8 +9,7 @@ import UIKit
 
 class MapCell: UICollectionViewCell {
     
-    
-    @IBOutlet weak var floorLabelPiece: UILabel!
+    @IBOutlet weak var floorLabelPiece: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -14,8 +14,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
             landmarkName = "presentModalController()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
             landmarkName = "setupConstraints()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
             landmarkName = "presentModalController()"
             landmarkType = "7">
          </BreakpointContent>
@@ -263,22 +263,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E9274DAD-203C-4B5A-9BED-FFB72CF325D8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Flash/Controller/View2Controller.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "View2Controller"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "82503339-9940-4097-BF8F-11E8420D14A8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -286,8 +270,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "289"
-            endingLineNumber = "289"
+            startingLineNumber = "269"
+            endingLineNumber = "269"
             landmarkName = "moveToNavigation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,8 +350,8 @@
             filePath = "Flash/Controller/View2Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "sideMenuState(expanded:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -430,10 +414,42 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "533"
-            endingLineNumber = "533"
+            startingLineNumber = "548"
+            endingLineNumber = "548"
             landmarkName = "tap(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E57DCB77-1CC0-4075-BCC7-1F6DC948CD59 - 676e1d4019d57077"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flash.View1Controller.tap(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "Flash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/View1Controller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "548"
+                  endingLineNumber = "548"
+                  offsetFromSymbolStart = "956">
+               </Location>
+               <Location
+                  uuid = "E57DCB77-1CC0-4075-BCC7-1F6DC948CD59 - 676e1d4019d57077"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Flash.View1Controller.tap(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "Flash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/on3french3dfry/Desktop/FlashParkingMDP/MDP/IOSApp/Flash/Flash/Flash/Controller/View1Controller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "548"
+                  endingLineNumber = "548"
+                  offsetFromSymbolStart = "1488">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -478,8 +494,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "496"
-            endingLineNumber = "496"
+            startingLineNumber = "473"
+            endingLineNumber = "473"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -494,8 +510,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "465"
-            endingLineNumber = "465"
+            startingLineNumber = "444"
+            endingLineNumber = "444"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -510,8 +526,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "484"
-            endingLineNumber = "484"
+            startingLineNumber = "463"
+            endingLineNumber = "463"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -526,8 +542,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "510"
-            endingLineNumber = "510"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
             landmarkName = "reloadAllMapCollectionViewCells(on:with:)"
             landmarkType = "7">
             <Locations>
@@ -574,8 +590,8 @@
             filePath = "Flash/Controller/View2Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "363"
-            endingLineNumber = "363"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
             landmarkName = "animateDismissView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -590,8 +606,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "413"
-            endingLineNumber = "413"
+            startingLineNumber = "392"
+            endingLineNumber = "392"
             landmarkName = "runTestNavMain()"
             landmarkType = "7">
          </BreakpointContent>
@@ -606,8 +622,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "453"
-            endingLineNumber = "453"
+            startingLineNumber = "432"
+            endingLineNumber = "432"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -622,8 +638,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "466"
-            endingLineNumber = "466"
+            startingLineNumber = "445"
+            endingLineNumber = "445"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -638,8 +654,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467"
+            startingLineNumber = "446"
+            endingLineNumber = "446"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -654,8 +670,8 @@
             filePath = "Flash/Controller/View1Controller.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "504"
-            endingLineNumber = "504"
+            startingLineNumber = "481"
+            endingLineNumber = "481"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>

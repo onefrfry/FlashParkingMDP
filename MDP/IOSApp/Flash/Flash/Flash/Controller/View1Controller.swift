@@ -234,26 +234,6 @@ class View1Controller: UIViewController, SetupDelegate, NavigateDelegate {
         return view
     }()
     
-//    lazy var loadingActivityIndicator: UIActivityIndicatorView = {
-//        let indicator = UIActivityIndicatorView()
-//
-//        indicator.style = .large
-//        indicator.color = .white
-//
-//        // The indicator should be animating when
-//        // the view appears.
-//        indicator.startAnimating()
-//
-//        // Setting the autoresizing mask to flexible for all
-//        // directions will keep the indicator in the center
-//        // of the view and properly handle rotation.
-//        indicator.autoresizingMask = [
-//            .flexibleLeftMargin, .flexibleRightMargin,
-//            .flexibleTopMargin, .flexibleBottomMargin
-//        ]
-//
-//        return indicator
-//    }()
     /*
      The function that actually allows the "Find My Car" view to be displayed
      The entire view itself comes from the CustomModalViewController class
@@ -291,13 +271,12 @@ class View1Controller: UIViewController, SetupDelegate, NavigateDelegate {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? View2Controller
-        // TODO: Pass in the floor where the user is one first
         vc?.collectionViewMap = mapCollectionView
         vc?.navOutput = navOutput
         vc?.delegate = navDelegate
         vc?.userLocation = userLocation
-        vc?.widthOfMap = widthOfMap;
-        vc?.heightOfMap = heightOfMap;
+        vc?.widthOfMap = widthOfMap
+        vc?.heightOfMap = heightOfMap
     }
     
     /*
@@ -374,7 +353,7 @@ class View1Controller: UIViewController, SetupDelegate, NavigateDelegate {
             let testGarage = NavWrapper();
             widthOfMap = 13
             heightOfMap = 13
-            testGarage.initMap(3, widthOfMap ?? 0, heightOfMap ?? 0);
+            testGarage.initMap(3, widthOfMap ?? 1, heightOfMap ?? 1);
             
             
             testGarage.setMapRange(0, 0, 1, 0, 1, Constants.cCharE);
@@ -483,8 +462,6 @@ extension View1Controller: UICollectionViewDelegate, UICollectionViewDataSource,
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.mapCell, for: indexPath) as! MapCell
             
-            cell.floorLabelPiece.adjustsFontSizeToFitWidth = true
-            
             return cell
             
         }
@@ -512,13 +489,51 @@ extension View1Controller: UICollectionViewDelegate, UICollectionViewDataSource,
                 if let cols = rows[x] as? NSMutableArray {
                     for y in 0 ... cols.count - 1 {
                         if let tileVal = cols[y] as? Tile, let openedCell = map.cellForItem(at: [0, count]) as? MapCell {
-                            openedCell.floorLabelPiece.text = String(UnicodeScalar(UInt8(tileVal.value)))
+                            imageTranslation(on: openedCell, String(UnicodeScalar(UInt8(tileVal.value))))
+                            
                             count = count + 1
                         }
                     }
                 }
             }
         }
+    }
+    // Sets the correct image for each tile of the map
+    func imageTranslation(on openedCell: MapCell, _ stringVal: String) {
+        var picType: String;
+        
+        switch(stringVal) {
+            case "P":
+                picType = "Parking"
+                break
+            
+            case "E":
+                picType = "Elevator"
+                break
+            
+            case "X":
+                picType = "Wall"
+                break
+            
+            case "S":
+                picType = "User"
+                break
+            
+            case "C":
+                picType = "Destination"
+                break
+            
+            case ".":
+                picType = "blank"
+                break
+            
+            default:
+            // Unexpected Character, will assume a walking space
+                picType = "blank"
+                break
+        }
+        
+        openedCell.floorLabelPiece.image = UIImage(named: picType)
     }
     /*
      This is the function where the map will change depending on the floor that is selected
